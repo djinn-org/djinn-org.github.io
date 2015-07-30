@@ -1,0 +1,23 @@
+<article class="choice-check">
+
+  <i class="md-icon">{{choice.icon}}</i>
+  <span ng-bind-html="choice.model | translate"></span>
+
+  <aside>
+
+    <span>{{choice.value}}</span>
+
+    <span class="arrows">
+      <a href="" ng-click="range.add()">
+        <i class="md-icon">expand_less</i>
+      </a>
+      <a href="" ng-click="range.remove()">
+        <i class="md-icon">expand_more</i>
+      </a>
+    </span>
+
+    <input type="hidden" ng-model="choice.value">
+
+  </aside>
+
+</article>

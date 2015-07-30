@@ -1,0 +1,18 @@
+<article class="choice-check choicebox" ng-click="choice.value = !choice.value">
+
+  <i class="md-icon">{{choice.icon}}</i>
+  <span ng-bind-html="choice.model | translate"></span>
+
+  <aside>
+
+    <input
+      type="checkbox"
+      ng-model="choice.value"
+      id="id-{{choice.model}}"
+      ng-value="true"
+    >
+    <label for="id-{{choice.model}}"><i class="md-icon">check</i></label>
+
+  </aside>
+
+</article>
