@@ -12,15 +12,15 @@
     href=""
     class="icon-menu"
     ng-if="main.goState"
-    ng-click="main.open = true;"
+    ng-click="main.open = true; main.close = false"
   ><i class="md-icon">menu</i></a>
 
 </header>
 
-<aside class="main-panel" ng-class="{open: main.open}">
+<aside class="main-panel" ng-class="{open: main.open, close: main.close}">
 
   <nav>
-    <a href="" ng-click="main.open = false">
+    <a href="" ng-click="main.close = true; main.open = false">
       <i class="md-icon">cancel</i>
     </a>
   </nav>
